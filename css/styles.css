@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+/* HOME */
+
+/* aplicando grid al body */
+
+.bodyGrid{
+   
+    width: 100%;
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "headerGrid"
+                        "mainGrid"
+                        "footerGrid"; 
+            
+}
+
+
+.headerGrid{    
+    grid-area: headerGrid;  
+    z-index: 3;   
+    display: flex;
+    flex-direction: row; 
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+    
+}
+
+.mainGrid{
+    grid-area: mainGrid; 
+    
+    
+   
+}
+
+.footerGrid{
+    grid-area: footerGrid; 
+
+}
+
+/* tipografia del titulo */
+.tipografiaTitulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black; 
+    margin-top:1% ;
+   }
+
+/* tipografia del subtitulo */
+.tipografiaSubtitulo{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-left: 2%;
+    margin-top: 2.2%;
+   
+}
+
+
+/* EDICION DEL MENU DE NAVEGACION */
+.navbar-nav{
+    border-left: 1px solid black;
+}
+.navbar-nav .nav-link.active {
+    color:rgb(74, 66, 66); 
+     
+}  
+
+.navbar-nav .nav-link:hover{
+    font-size: large;
+    background-color: rgba(231, 200, 238, 0.536);
+    
+}
+.navbar-nav .nav-link:visited{
+    color:chocolate;
+}
+
+.nav-item.active{
+    text-decoration: underline;
+} 
+
+
+/* edicion del logo */
+.logo1, 
+.logo2{
+ 
+    padding: 0;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15;
+    animation: animacion-logos 10s  ease-in-out 0s infinite normal; 
+
+   
+}
+  
+
+@keyframes animacion-logos{
+    0%{
+        transform:rotateY(20deg)
+    }
+    25%{
+        transform:rotateY(50deg) ;
+    }
+    50%{
+        transform:rotateY(20deg) ;
+    }
+    75%{
+        transform:rotateY(50deg) ;
+    }
+    100%{
+        transform:rotateY(20deg) ;
+    }
+
+}
+
+/* MAIN */
+
+main{
+    padding-left: 2%;
+    padding-right: 2%; 
+    margin-top: 0;
+    background-image: url(../imagen/imagen-main.png);
+    
+} 
+
+
+/* tipografia del titulo del main index */
+.tituloDelParrafo{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color:rgb(47, 46, 46);
+    
+}
+
+/* tipografia de los articulos del main index */
+article{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify; 
+
+}
+
+.horarios{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    animation: animacion-horarios 20s  ease-in-out 0s infinite normal;  
+}
+  
+
+@keyframes animacion-horarios{
+    0%{
+        transform:scale(.8) ;
+    }
+    25%{
+        transform:scale(1) ;
+    }
+    50%{
+        transform:scale(.8) ;
+    }
+    75%{
+        transform:scale(1) ;
+    }
+    100%{
+        transform:scale(.8) ;
+    }
+
+} 
+
+
+
+
+/* tipografia realizacion de traslados */
+.traslados{
+    font-size: x-large;
+    color: white;
+    text-align: center; 
+    background-color: black;
+    padding: 2%;
+    margin: 2%; 
+    animation: animacion-traslados 10s  ease-in-out 0s infinite normal; 
+
+}
+
+
+@keyframes animacion-traslados{
+    0%{
+        transform:scale(.8) ;
+    }
+    25%{
+        transform:scale(1) ;
+    }
+    50%{
+        transform:scale(.8) ;
+    }
+    75%{
+        transform:scale(1) ;
+    }
+    100%{
+        transform:scale(.8) ;
+    }
+
+}
+
+
+.imgNuestroEquipo{
+   
+    margin-bottom: 3rem; 
+    margin-right: 3rem;
+    float: right;
+    margin-left: 3rem;
+
+     
+}
+
+.contactanos{
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+/* edicion ir al inicio de pagina */
+.irInicioPagina {
+    
+    display: inline-block;   
+    font-size:large;
+    margin-top: 5 rem;
+    
+   
+ }
+
+/* edicion de los titulos de los articulos en las paginas */
+article h2{
+    margin: 2%;
+}
+
+
+article h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    color:rgb(47, 46, 46);
+    text-align: center;
+    padding: 2rem;
+    text-decoration: underline;
+
+}
+article h4{
+    margin: 1%;
+    padding: 1%;
+    text-decoration: underline;
+
+}
+
+/* PAGINA NOSOTROS */
+/* edicion foto de Cristina y de Isabela */
+
+.cristina,
+.isabela{
+    margin: 2%;
+    border-style: double;
+    
+}
+.cristina:hover,
+.isabela:hover{
+    transform: scale(.9,.9);
+   
+}
+
+/* PAGINA SERVICIOS */
+/* edicion listado de servicios */
+
+.servicios{
+    background-color:rgb(228, 219, 183);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    
+}
+
+.navServicios{
+    background-color: rgb(59, 55, 55);
+   
+}
+
+.navServicios  a{
+    text-decoration: none;
+    color:white ;
+    padding: 2px;
+    margin: .5rem;  
+} 
+
+.navServicios  a:hover{
+    text-decoration: underline;
+    font-size: large;
+   
+}
+
+
+
+
+/* PAGINA GALERIA */
+/* edicion de galeria de imagenes con Grid */
+
+.galleryContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2%; 
+    margin-bottom: 5%;
+    grid-gap: 2%;
+    
+}
+
+.galleryImg{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;   
+    
+    
+}
+.galleryImg:hover{
+    width: 125%;
+    height: 125%;
+    transform: scale(1); 
+   
+}
+
+
+/* PAGINA CONTACTO */
+
+form div{
+    margin: 2%;
+}
+
+
+
+/* FOOTER */
+footer {
+    z-index: 2;
+    text-align:center;   
+    background-image: url(../imagen/imagen-footer.png)
+}
+
+
+
+/* EDICION  boton de Whatsapp, Facebook e Instagram */
+.btnWhatsapp,
+.btnFacebook,
+.btnInstagram{
+
+   
+    left: 1%; 
+    width: 8%; 
+    padding: 2%;  
+
+} 
+
+
+/* RESPONSIVE  */
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  
+   
+ }
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .logo2{
+        display: none;
+    } 
+ }
+
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  
+    .galleryContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+      
+    }
+ 
+}
+
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .galleryContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .galleryContainer{
+        grid-template-columns: 1fr 1fr; 
+    }
+  
+ }
+
+
+
+
+
+
