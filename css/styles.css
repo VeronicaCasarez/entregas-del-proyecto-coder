@@ -48,7 +48,7 @@
 .tipografiaTitulo{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black; 
-    margin-top:1% ;
+    margin-top: 1%;
    }
 
 /* tipografia del subtitulo */
@@ -56,7 +56,7 @@
     font-family: 'Roboto', sans-serif;
     color: black;
     margin-left: 2%;
-    margin-top: 2.2%;
+    margin-top: 1.6%;
    
 }
 
@@ -64,6 +64,7 @@
 /* EDICION DEL MENU DE NAVEGACION */
 .navbar-nav{
     border-left: 1px solid black;
+    margin-top: 0.8%;
 }
 .navbar-nav .nav-link.active {
     color:rgb(74, 66, 66); 
@@ -76,7 +77,7 @@
     
 }
 .navbar-nav .nav-link:visited{
-    color:chocolate;
+    color:coral;
 }
 
 .nav-item.active{
@@ -95,7 +96,6 @@
     margin-right: 15;
     animation: animacion-logos 10s  ease-in-out 0s infinite normal; 
 
-   
 }
   
 
@@ -406,8 +406,10 @@ footer {
 @media (max-width: 575.98px) {
 
     .galleryContainer{
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5rem; 
     }
+
   
  }
 
