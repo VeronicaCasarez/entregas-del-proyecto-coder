@@ -39,6 +39,8 @@
    
 }
 
+
+
 .footerGrid{
     grid-area: footerGrid; 
 
@@ -152,7 +154,6 @@ article{
 
 .horarios{
     text-align: center;
-    border-bottom: 1px solid gray;
     animation: animacion-horarios 20s  ease-in-out 0s infinite normal;  
 }
   
@@ -174,7 +175,7 @@ article{
         transform:scale(.8) ;
     }
 
-} 
+}  
 
 
 
