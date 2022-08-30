@@ -1,0 +1,18 @@
+footer{
+    z-index: 2;
+    text-align:center;   
+    background-image: url(../imagen/imagen-footer.png);
+    grid-area: footerGrid; 
+
+
+    .btnWhatsapp,
+    .btnFacebook,
+    .btnInstagram{
+            left: 1%; 
+            width: 8%; 
+            padding: 2%;  
+
+    } 
+
+}
+

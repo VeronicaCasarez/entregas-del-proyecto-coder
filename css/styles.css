@@ -4,42 +4,40 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "headerGrid" "mainGrid" "footerGrid";
-  /* FOOTER */ }
-  .bodyGrid .headerGrid {
-    grid-area: headerGrid;
-    z-index: 3;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-bottom: 1px solid gainsboro; }
-    .bodyGrid .headerGrid .tipografiaTitulo {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: black;
-      margin-top: 1%; }
-    .bodyGrid .headerGrid .tipografiaSubtitulo {
-      font-family: 'Roboto', sans-serif;
-      color: black;
-      margin-left: 2%;
-      margin-top: 1.6%; }
-    .bodyGrid .headerGrid .navbar-nav {
-      border-left: 1px solid black;
-      margin-top: 0.8%; }
-      .bodyGrid .headerGrid .navbar-nav .nav-link:active {
-        color: #4a4242; }
-      .bodyGrid .headerGrid .navbar-nav .nav-link:hover {
-        font-size: large;
-        background-color: rgba(231, 200, 238, 0.536); }
-      .bodyGrid .headerGrid .navbar-nav .nav-link:visited {
-        color: coral; }
-    .bodyGrid .headerGrid .logo1,
-    .bodyGrid .headerGrid .logo2 {
-      padding: 0;
-      width: 20%;
-      margin-top: 10%;
-      margin-left: 15%;
-      margin-right: 15;
-      animation: animacion-logos 10s  ease-in-out 0s infinite normal; }
+  grid-template-areas: "headerGrid" "mainGrid" "footerGrid"; }
+
+.headerGrid {
+  grid-area: headerGrid;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px solid gainsboro; }
+  .headerGrid .tipografiaTitulo {
+    font-family: "Franklin Gothic Medium" "Arial Narrow" Arial sans-serif;
+    color: black;
+    margin-top: 1%; }
+  .headerGrid .tipografiaSubtitulo {
+    font-family: "Roboto" sans-serif;
+    color: black;
+    margin-left: 2%;
+    margin-top: 1.6%; }
+  .headerGrid .navbar-nav {
+    border-left: 1px solid black;
+    margin-top: 0.8%; }
+    .headerGrid .navbar-nav .nav-link:hover {
+      font-size: large;
+      background-color: rgba(231, 200, 238, 0.536); }
+    .headerGrid .navbar-nav .nav-link:visited {
+      color: coral; }
+  .headerGrid .logo1,
+  .headerGrid .logo2 {
+    padding: 0;
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15;
+    animation: animacion-logos 10s  ease-in-out 0s infinite normal; }
 
 @keyframes animacion-logos {
   0% {
@@ -52,28 +50,29 @@
     transform: rotateY(50deg); }
   100% {
     transform: rotateY(20deg); } }
-  .bodyGrid .mainIndex {
-    grid-area: mainGrid;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-top: 0;
-    background-image: url(../imagen/imagen-main.png); }
-    .bodyGrid .mainIndex .tituloDelParrafo {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 2rem;
-      margin-top: 1%;
-      margin-bottom: 2rem;
-      text-align: center;
-      text-decoration-line: underline;
-      color: #2f2e2e; }
-    .bodyGrid .mainIndex article {
-      font-family: 'Times New Roman', Times, serif;
-      color: black;
-      font-size: 1.5rem;
-      text-align: justify; }
-    .bodyGrid .mainIndex .horarios {
-      text-align: center;
-      animation: animacion-horarios 20s  ease-in-out 0s infinite normal; }
+
+.mainIndex {
+  grid-area: mainGrid;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 0;
+  background-image: url(../imagen/imagen-main.png); }
+  .mainIndex .tituloDelParrafo {
+    font-family: "Times New Roman" Times serif;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #544d4d; }
+  .mainIndex article {
+    font-family: "Times New Roman" Times serif;
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify; }
+  .mainIndex .horarios {
+    text-align: center;
+    animation: animacion-horarios 20s  ease-in-out 0s infinite normal; }
 
 @keyframes animacion-horarios {
   0% {
@@ -86,21 +85,20 @@
     transform: scale(1); }
   100% {
     transform: scale(0.8); } }
-    .bodyGrid .mainIndex article h3 {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: larger;
-      color: #2f2e2e;
-      text-align: center;
-      padding: 2rem;
-      text-decoration: underline; }
-    .bodyGrid .mainIndex .traslados {
-      font-size: x-large;
-      color: white;
-      text-align: center;
-      background-color: black;
-      padding: 2%;
-      margin: 2%;
-      animation: animacion-traslados 10s  ease-in-out 0s infinite normal; }
+  .mainIndex article h3 {
+    font-family: "Times New Roman" Times serif;
+    font-size: larger;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: underline; }
+  .mainIndex .traslados {
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 2%;
+    margin: 2%;
+    animation: animacion-traslados 10s  ease-in-out 0s infinite normal; }
 
 @keyframes animacion-traslados {
   0% {
@@ -113,31 +111,32 @@
     transform: scale(1); }
   100% {
     transform: scale(0.8); } }
-    .bodyGrid .mainIndex .ultimoArticulo {
-      font-family: 'Times New Roman', Times, serif;
-      color: black;
-      font-size: 1.5rem;
-      text-align: justify; }
-      .bodyGrid .mainIndex .ultimoArticulo .imgNuestroEquipo {
-        margin-bottom: 3rem;
-        margin-right: 3rem;
-        float: right;
-        margin-left: 3rem; }
-      .bodyGrid .mainIndex .ultimoArticulo .contactanos {
-        border: 1px solid black;
-        text-align: center; }
-    .bodyGrid .mainIndex .irInicioPagina {
-      display: inline-block;
-      font-size: large;
-      margin-top: 5 rem; }
-  .bodyGrid footer {
-    z-index: 2;
-    text-align: center;
-    background-image: url(../imagen/imagen-footer.png);
-    grid-area: footerGrid; }
-    .bodyGrid footer .btnWhatsapp,
-    .bodyGrid footer .btnFacebook,
-    .bodyGrid footer .btnInstagram {
-      left: 1%;
-      width: 8%;
-      padding: 2%; }
+  .mainIndex .ultimoArticulo {
+    font-family: "Times New Roman" Times serif;
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify; }
+    .mainIndex .ultimoArticulo .imgNuestroEquipo {
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+      float: right;
+      margin-left: 3rem; }
+    .mainIndex .ultimoArticulo .contactanos {
+      border: 1px solid black;
+      text-align: center; }
+  .mainIndex .irInicioPagina {
+    display: inline-block;
+    font-size: large;
+    margin-top: 5 rem; }
+
+footer {
+  z-index: 2;
+  text-align: center;
+  background-image: url(../imagen/imagen-footer.png);
+  grid-area: footerGrid; }
+  footer .btnWhatsapp,
+  footer .btnFacebook,
+  footer .btnInstagram {
+    left: 1%;
+    width: 8%;
+    padding: 2%; }
