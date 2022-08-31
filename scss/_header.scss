@@ -50,7 +50,7 @@
         animation: animacion-logos 10s  ease-in-out 0s infinite normal; 
 
         @keyframes animacion-logos{
-                   0%{
+                0%{
                     transform:rotateY(20deg)
                     }
                 25%{
@@ -59,7 +59,7 @@
                 50%{
                     transform:rotateY(20deg) ;
                     }
-                    75%{
+                75%{
                     transform:rotateY(50deg) ;
                     }
                 100%{
