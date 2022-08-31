@@ -129,6 +129,62 @@
     font-size: large;
     margin-top: 5 rem; }
 
+.mainNosotros {
+  margin: 2%; }
+  .mainNosotros .imgCristina,
+  .mainNosotros .imgIsabela {
+    margin: 2%;
+    border-style: double; }
+    .mainNosotros .imgCristina:hover, .mainNosotros .imgCristina:hover,
+    .mainNosotros .imgIsabela:hover,
+    .mainNosotros .imgIsabela:hover {
+      transform: scale(0.9, 0.9); }
+
+.mainServicios {
+  margin: 2%; }
+  .mainServicios .servicios {
+    background-color: lightpink;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 1%;
+    padding-top: 1%; }
+    .mainServicios .servicios .navServicios {
+      background-color: #3b3737; }
+      .mainServicios .servicios .navServicios ul li a {
+        color: white;
+        padding: 2px;
+        margin: .5rem;
+        text-decoration: none; }
+        .mainServicios .servicios .navServicios ul li a:hover {
+          text-decoration: underline;
+          font-size: medium; }
+  .mainServicios .irInicioPagina {
+    background-color: #e4cbcb;
+    display: inline-block;
+    font-size: x-large;
+    margin-top: 5 rem; }
+
+.mainGaleria .galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2%;
+  margin-bottom: 5%;
+  grid-gap: 2%; }
+  .mainGaleria .galleryContainer .galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+    .mainGaleria .galleryContainer .galleryImg:hover {
+      width: 125%;
+      height: 125%;
+      transform: scale(1); }
+
+.mainContacto {
+  margin: 2%; }
+  .mainContacto .formularioContacto {
+    margin: 2%; }
+
 footer {
   z-index: 2;
   text-align: center;

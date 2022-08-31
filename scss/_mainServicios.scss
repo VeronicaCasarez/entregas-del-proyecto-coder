@@ -1,0 +1,43 @@
+.mainServicios{
+    margin: 2%;
+    .servicios{
+        background-color:lightpink;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: large;
+        padding-bottom: 1%;
+        padding-top: 1%;
+
+    .navServicios{
+        background-color: rgb(59, 55, 55);
+        ul{  
+            li{ 
+                 a{
+                    color:white ;
+                    padding: 2px;
+                    margin: .5rem;  
+                    text-decoration: none;
+    
+                            &:hover{
+                                text-decoration: underline;
+                                font-size: medium;
+               
+                                 }
+                     } 
+             }
+       
+        }
+    }
+    
+}
+
+
+
+.irInicioPagina {
+    background-color: rgb(228, 203, 203); 
+    display: inline-block;   
+    font-size: x-large;
+    margin-top: 5 rem;
+   
+ }
+}

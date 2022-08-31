@@ -1,0 +1,17 @@
+.mainNosotros{
+    margin: 2%;
+
+    .imgCristina,
+    .imgIsabela{    
+        margin: 2%;
+        border-style: double;
+
+            &:hover,
+            &:hover{
+                transform: scale(.9,.9);
+   
+            }
+    
+        }
+
+}
