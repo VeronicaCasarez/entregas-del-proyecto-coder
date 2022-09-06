@@ -61,11 +61,13 @@
   .headerGrid .navbar-nav {
     border-left: 1px solid black;
     margin-top: 0.9%; }
+    .headerGrid .navbar-nav .nav-link.active {
+      text-decoration: underline; }
     .headerGrid .navbar-nav .nav-link:hover {
       font-size: large;
       background-color: rgba(231, 200, 238, 0.536); }
     .headerGrid .navbar-nav .nav-link:visited {
-      color: coral; }
+      color: #794e3d; }
   .headerGrid .logo1 {
     margin-left: 60%;
     margin-right: 0%; }

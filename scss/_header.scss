@@ -26,6 +26,9 @@
     .navbar-nav{
         border-left: 1px solid black;
         margin-top: 0.9%;
+        .nav-link.active{
+            text-decoration: underline;
+        }
 
         .nav-link{     
            
@@ -35,9 +38,10 @@
             }
        
             &:visited{
-            color:coral;
+            color:rgb(121, 78, 61);
             }  
-         
+           
+            
         
         }
     } 
