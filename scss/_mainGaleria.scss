@@ -1,15 +1,11 @@
 .mainGaleria{ 
-    margin: 2%;
+    @include margen (2%);
+    background-image: url(../imagen/fondo-main.jpg);
     
     .tituloDelParrafo{
-        font-family:map-get($tipografia,"titulos-parrafos");
-        font-size: 2rem;
-        margin-top: 1%;
-        margin-bottom: 2rem;
-        text-align: center;
-        text-decoration-line: underline;
-        color:$color-titulos-paginas;
-        }
+        @extend .tituloDelParrafo; 
+                 
+       }
      
     .galleryContainer{
     display: grid;

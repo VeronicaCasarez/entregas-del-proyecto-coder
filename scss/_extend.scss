@@ -1,0 +1,47 @@
+.tituloDelParrafo{
+    font-family:map-get($tipografia,"titulos-parrafos");
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color:$color-titulos-paginas;
+}
+
+  
+.underline{
+    text-decoration: underline;
+}
+
+.irInicioPagina {
+    display: inline-block;   
+    font-size: x-large;
+    margin-top: 5 rem;
+
+}
+
+.logo{
+        padding: 0;
+        width: 20%;
+        margin-top: 10%;
+        animation: animacion-logos 10s  ease-in-out 0s infinite normal; 
+
+        @keyframes animacion-logos{
+                0%{
+                    transform:rotateY(20deg)
+                    }
+                25%{
+                    transform:rotateY(50deg) ;
+                   }
+                50%{
+                    transform:rotateY(20deg) ;
+                    }
+                75%{
+                    transform:rotateY(50deg) ;
+                    }
+                100%{
+                    transform:rotateY(20deg) ;
+                    }
+
+        }
+    }

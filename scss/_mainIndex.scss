@@ -3,20 +3,15 @@
     padding-left: 2%;
     padding-right: 2%; 
     margin-top: 0;
-    background-image: url(../imagen/imagen-main.png);
+    background-image: url(../imagen/fondo-main.jpg);
 
     .tituloDelParrafo{
-            font-family:map-get($tipografia,"titulos-parrafos");
-            font-size: 2rem;
-            margin-top: 1%;
-            margin-bottom: 2rem;
-            text-align: center;
-            text-decoration-line: underline;
-            color:$color-titulos-paginas;
-    }
+        @extend .tituloDelParrafo; 
+                 
+       }           
 
     article{
-        font-family:map-get($tipografia,"titulos-parrafos");
+        font-family:map-get($tipografia,"tipografia-parrafos");
         color: black;
         font-size: 1.5rem;
         text-align: justify; 
@@ -32,7 +27,7 @@
             font-size: larger;
             text-align: center;
             padding: 2rem;
-            text-decoration: underline;
+            @extend .underline;
 
     }
     .traslados{
@@ -86,9 +81,7 @@
 
     }
     .irInicioPagina {
-                display: inline-block;   
-                font-size:large;
-                margin-top: 5 rem;
+         @extend .irInicioPagina;
      }
 
 }                   

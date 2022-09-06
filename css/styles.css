@@ -1,3 +1,38 @@
+.tituloDelParrafo, .mainIndex .tituloDelParrafo, .mainNosotros .tituloDelParrafo, .mainServicios .tituloDelParrafo, .mainGaleria .tituloDelParrafo, .mainContacto .tituloDelParrafo {
+  font-family: "Times New Roman" Times serif;
+  font-size: 2rem;
+  margin-top: 1%;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #544d4d; }
+
+.underline, .mainIndex article h3, .mainServicios article h3, .mainServicios article h4 {
+  text-decoration: underline; }
+
+.irInicioPagina, .mainIndex .irInicioPagina, .mainServicios .irInicioPagina {
+  display: inline-block;
+  font-size: x-large;
+  margin-top: 5 rem; }
+
+.logo, .headerGrid .logo1, .headerGrid .logo2 {
+  padding: 0;
+  width: 20%;
+  margin-top: 10%;
+  animation: animacion-logos 10s  ease-in-out 0s infinite normal; }
+
+@keyframes animacion-logos {
+  0% {
+    transform: rotateY(20deg); }
+  25% {
+    transform: rotateY(50deg); }
+  50% {
+    transform: rotateY(20deg); }
+  75% {
+    transform: rotateY(50deg); }
+  100% {
+    transform: rotateY(20deg); } }
+
 .bodyGrid {
   width: 100%;
   height: 100%;
@@ -16,7 +51,8 @@
   .headerGrid .tipografiaTitulo {
     font-family: "Franklin Gothic Medium" "Arial Narrow" Arial sans-serif;
     color: black;
-    margin-top: 1%; }
+    margin-top: 1%;
+    padding-right: 0%; }
   .headerGrid .tipografiaSubtitulo {
     font-family: "Roboto" sans-serif;
     color: black;
@@ -30,43 +66,20 @@
       background-color: rgba(231, 200, 238, 0.536); }
     .headerGrid .navbar-nav .nav-link:visited {
       color: coral; }
-  .headerGrid .logo1,
+  .headerGrid .logo1 {
+    margin-left: 60%;
+    margin-right: 0%; }
   .headerGrid .logo2 {
-    padding: 0;
-    width: 20%;
-    margin-top: 10%;
-    margin-left: 15%;
-    margin-right: 5%;
-    animation: animacion-logos 10s  ease-in-out 0s infinite normal; }
-
-@keyframes animacion-logos {
-  0% {
-    transform: rotateY(20deg); }
-  25% {
-    transform: rotateY(50deg); }
-  50% {
-    transform: rotateY(20deg); }
-  75% {
-    transform: rotateY(50deg); }
-  100% {
-    transform: rotateY(20deg); } }
+    margin-left: 2%;
+    margin-right: 1%; }
 
 .mainIndex {
   grid-area: mainGrid;
   padding-left: 2%;
   padding-right: 2%;
   margin-top: 0;
-  background-image: url(../imagen/imagen-main.png); }
-  .mainIndex .tituloDelParrafo {
-    font-family: "Times New Roman" Times serif;
-    font-size: 2rem;
-    margin-top: 1%;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #544d4d; }
+  background-image: url(../imagen/fondo-main.jpg); }
   .mainIndex article {
-    font-family: "Times New Roman" Times serif;
     color: black;
     font-size: 1.5rem;
     text-align: justify; }
@@ -76,8 +89,7 @@
     font-family: "Times New Roman" Times serif;
     font-size: larger;
     text-align: center;
-    padding: 2rem;
-    text-decoration: underline; }
+    padding: 2rem; }
   .mainIndex .traslados {
     font-size: x-large;
     color: white;
@@ -111,23 +123,15 @@
     .mainIndex .ultimoArticulo .contactanos {
       border: 1px solid black;
       text-align: center; }
-  .mainIndex .irInicioPagina {
-    display: inline-block;
-    font-size: large;
-    margin-top: 5 rem; }
 
 .mainNosotros {
-  margin: 2%; }
-  .mainNosotros .tituloDelParrafo {
-    font-family: "Times New Roman" Times serif;
-    font-size: 2rem;
-    margin-top: 1%;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #544d4d; }
+  margin: 2%;
+  background-image: url(../imagen/fondo-main.jpg); }
   .mainNosotros h2 {
     margin-left: 5%; }
+  .mainNosotros article p {
+    font-family: " Arial, Helvetica, sans-serif";
+    font-size: larger; }
   .mainNosotros .imgCristina,
   .mainNosotros .imgIsabela {
     margin: 2%;
@@ -138,18 +142,11 @@
       transform: scale(0.9, 0.9); }
 
 .mainServicios {
-  margin: 2%; }
-  .mainServicios .tituloDelParrafo {
-    font-family: "Times New Roman" Times serif;
-    font-size: 2rem;
-    margin-top: 1%;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #544d4d; }
+  margin: 2%;
+  background-image: url(../imagen/fondo-main.jpg); }
   .mainServicios .servicios {
     background-color: lightpink;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto sans-serif";
     text-align: center;
     font-size: large;
     padding-bottom: 1%;
@@ -158,37 +155,24 @@
       background-color: #3b3737; }
       .mainServicios .servicios .navServicios ul li a {
         color: white;
-        padding: 2px;
-        margin: .5rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
         text-decoration: none; }
         .mainServicios .servicios .navServicios ul li a:hover {
           text-decoration: underline;
           font-size: medium; }
   .mainServicios article h3 {
-    text-decoration: underline;
     text-align: center;
     margin: 2%; }
   .mainServicios article h4 {
-    text-decoration: underline; }
+    margin-top: 2%; }
   .mainServicios article p {
     font-family: " Arial, Helvetica, sans-serif";
     font-size: larger; }
-  .mainServicios .irInicioPagina {
-    background-color: #e4cbcb;
-    display: inline-block;
-    font-size: x-large;
-    margin-top: 5 rem; }
 
 .mainGaleria {
-  margin: 2%; }
-  .mainGaleria .tituloDelParrafo {
-    font-family: "Times New Roman" Times serif;
-    font-size: 2rem;
-    margin-top: 1%;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #544d4d; }
+  margin: 2%;
+  background-image: url(../imagen/fondo-main.jpg); }
   .mainGaleria .galleryContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -205,22 +189,15 @@
         transform: scale(1); }
 
 .mainContacto {
-  margin: 2%; }
-  .mainContacto .tituloDelParrafo {
-    font-family: "Times New Roman" Times serif;
-    font-size: 2rem;
-    margin-top: 1%;
-    margin-bottom: 2rem;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #544d4d; }
+  margin: 2%;
+  background-image: url(../imagen/fondo-main.jpg); }
   .mainContacto .formularioContacto {
     margin: 2%; }
 
 footer {
   z-index: 2;
   text-align: center;
-  background-image: url(../imagen/imagen-footer.png);
+  background-image: url(../imagen/imagen-footer.jpg);
   grid-area: footerGrid; }
   footer .btnWhatsapp,
   footer .btnFacebook,
@@ -230,23 +207,22 @@ footer {
     padding: 2%; }
 
 /* RESPONSIVE  */
-/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1299.98px) {
+  .logo2 {
+    display: none; } }
+
 @media (max-width: 1199.98px) {
   .logo2 {
     display: none; } }
 
-/* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .galleryContainer {
     grid-template-columns: 1fr 1fr 1fr; } }
 
-/* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .galleryContainer {
     grid-template-columns: 1fr 1fr 1fr; } }
 
-/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .galleryContainer {
     grid-template-columns: 1fr 1fr;

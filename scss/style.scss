@@ -1,4 +1,6 @@
 @import './variables';
+@import'./extend';
+@import './mixins';
 @import './body';
 @import'./header';
 @import'./mainIndex';
@@ -12,20 +14,21 @@
 
 /* RESPONSIVE  */
 
-/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-  
+
+@media (max-width: 1299.98px) {
+ 
+    .logo2{
+        display: none;
+    } 
    
 }
 
-/* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
    .logo2{
        display: none;
    } 
 }
 
-/* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
  
    .galleryContainer{
@@ -35,7 +38,7 @@
 
 }
 
-/* // `md` applies to small devices (landscape phones, less than 768px) */
+
 @media (max-width: 767.98px) {
    .galleryContainer{
        grid-template-columns: 1fr 1fr 1fr;
@@ -44,7 +47,7 @@
 
 }
 
-/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575.98px) {
 
    .galleryContainer{

@@ -1,19 +1,18 @@
 .mainServicios{
-    margin: 2%;
+    @include margen(2%);
+    background-image: url(../imagen/fondo-main.jpg);
+
+    
 
     .tituloDelParrafo{
-        font-family:map-get($tipografia,"titulos-parrafos");
-        font-size: 2rem;
-        margin-top: 1%;
-        margin-bottom: 2rem;
-        text-align: center;
-        text-decoration-line: underline;
-        color:$color-titulos-paginas;
-        }   
+     @extend .tituloDelParrafo; 
+              
+    }
+
 
     .servicios{
         background-color:lightpink;
-        font-family: 'Roboto', sans-serif;
+        font-family: map-get($tipografia,"servicios");
         text-align: center;
         font-size: large;
         padding-bottom: 1%;
@@ -25,8 +24,8 @@
             li{ 
                  a{
                     color:white ;
-                    padding: 2px;
-                    margin: .5rem;  
+                    margin-right: 2rem;
+                    margin-left: 2rem;
                     text-decoration: none;
     
                             &:hover{
@@ -43,13 +42,14 @@
 }
     article{
         h3{
-            text-decoration: underline;
+            @extend .underline;
             text-align: center;
-            margin: 2%;
+            @include margen(2%);
         }
 
         h4{
-            text-decoration: underline;
+            @extend .underline;
+            margin-top: 2%;
         }
         p{
             font-family:map-get($tipografia,"parrafos");
@@ -57,11 +57,7 @@
         }
     }
 
-    .irInicioPagina {
-        background-color: rgb(228, 203, 203); 
-        display: inline-block;   
-        font-size: x-large;
-        margin-top: 5 rem;
-   
-    }
+  .irInicioPagina{
+    @extend .irInicioPagina;
+  }
 }

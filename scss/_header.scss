@@ -12,6 +12,7 @@
         font-family: map-get($tipografia,"titulo-header");
         color: black; 
         margin-top: 1%;
+        padding-right: 0%;
       }
 
     .tipografiaSubtitulo{
@@ -38,35 +39,19 @@
             }  
          
         
-    }
-} 
-    .logo1, 
-    .logo2{
-        padding: 0;
-        width: 20%;
-        margin-top: 10%;
-        margin-left: 15%;
-        margin-right: 5%;
-        animation: animacion-logos 10s  ease-in-out 0s infinite normal; 
-
-        @keyframes animacion-logos{
-                0%{
-                    transform:rotateY(20deg)
-                    }
-                25%{
-                    transform:rotateY(50deg) ;
-                   }
-                50%{
-                    transform:rotateY(20deg) ;
-                    }
-                75%{
-                    transform:rotateY(50deg) ;
-                    }
-                100%{
-                    transform:rotateY(20deg) ;
-                    }
-
         }
+    } 
+    .logo1{
+        @extend .logo;
+        margin-left: 60%;
+        margin-right: 0%;
+      
+    }
+
+    .logo2{
+        @extend .logo;
+        margin-left: 2%;
+        margin-right: 1%;
     }
 
 
