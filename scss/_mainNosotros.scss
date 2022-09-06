@@ -1,10 +1,26 @@
 .mainNosotros{
     margin: 2%;
 
+    .tituloDelParrafo{
+        font-family:map-get($tipografia,"titulos-parrafos");
+        font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-decoration-line: underline;
+        color:$color-titulos-paginas;
+        }
+        
+    h2{
+        margin-left: 5%;
+    }
+    
+
     .imgCristina,
     .imgIsabela{    
         margin: 2%;
         border-style: double;
+        
 
             &:hover,
             &:hover{
@@ -13,5 +29,5 @@
             }
     
         }
-
 }
+

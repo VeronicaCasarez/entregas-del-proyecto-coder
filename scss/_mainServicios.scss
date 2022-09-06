@@ -1,5 +1,16 @@
 .mainServicios{
     margin: 2%;
+
+    .tituloDelParrafo{
+        font-family:map-get($tipografia,"titulos-parrafos");
+        font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-decoration-line: underline;
+        color:$color-titulos-paginas;
+        }   
+
     .servicios{
         background-color:lightpink;
         font-family: 'Roboto', sans-serif;
@@ -30,14 +41,27 @@
     }
     
 }
+    article{
+        h3{
+            text-decoration: underline;
+            text-align: center;
+            margin: 2%;
+        }
 
+        h4{
+            text-decoration: underline;
+        }
+        p{
+            font-family:map-get($tipografia,"parrafos");
+            font-size: larger;
+        }
+    }
 
-
-.irInicioPagina {
-    background-color: rgb(228, 203, 203); 
-    display: inline-block;   
-    font-size: x-large;
-    margin-top: 5 rem;
+    .irInicioPagina {
+        background-color: rgb(228, 203, 203); 
+        display: inline-block;   
+        font-size: x-large;
+        margin-top: 5 rem;
    
- }
+    }
 }

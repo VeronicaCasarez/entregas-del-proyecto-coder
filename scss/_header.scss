@@ -18,13 +18,13 @@
         font-family: map-get($tipografia,"subtitulo-header");
         color: black;
         margin-left: 2%;
-        margin-top: 1.6%;
+        margin-top: 1.8%;
 
     }
 
     .navbar-nav{
         border-left: 1px solid black;
-        margin-top: 0.8%;
+        margin-top: 0.9%;
 
         .nav-link{     
            
@@ -46,7 +46,7 @@
         width: 20%;
         margin-top: 10%;
         margin-left: 15%;
-        margin-right: 15;
+        margin-right: 5%;
         animation: animacion-logos 10s  ease-in-out 0s infinite normal; 
 
         @keyframes animacion-logos{

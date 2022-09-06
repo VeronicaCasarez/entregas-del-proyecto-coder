@@ -1,4 +1,16 @@
 .mainGaleria{ 
+    margin: 2%;
+    
+    .tituloDelParrafo{
+        font-family:map-get($tipografia,"titulos-parrafos");
+        font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-decoration-line: underline;
+        color:$color-titulos-paginas;
+        }
+     
     .galleryContainer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -9,12 +21,12 @@
         .galleryImg{
             width: 100%;
             height: 100%; 
-         object-fit: cover; 
+            object-fit: cover; 
         
             &:hover{
              width: 125%;
              height: 125%;
-            transform: scale(1); 
+             transform: scale(1); 
            
             }
         

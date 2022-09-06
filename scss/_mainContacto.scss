@@ -1,5 +1,16 @@
 .mainContacto{
     margin: 2%;
+    
+    .tituloDelParrafo{
+        font-family:map-get($tipografia,"titulos-parrafos");
+        font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-decoration-line: underline;
+        color:$color-titulos-paginas;
+        }
+     
 
     .formularioContacto{
        margin: 2%;

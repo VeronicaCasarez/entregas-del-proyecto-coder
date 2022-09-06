@@ -21,10 +21,10 @@
     font-family: "Roboto" sans-serif;
     color: black;
     margin-left: 2%;
-    margin-top: 1.6%; }
+    margin-top: 1.8%; }
   .headerGrid .navbar-nav {
     border-left: 1px solid black;
-    margin-top: 0.8%; }
+    margin-top: 0.9%; }
     .headerGrid .navbar-nav .nav-link:hover {
       font-size: large;
       background-color: rgba(231, 200, 238, 0.536); }
@@ -36,7 +36,7 @@
     width: 20%;
     margin-top: 10%;
     margin-left: 15%;
-    margin-right: 15;
+    margin-right: 5%;
     animation: animacion-logos 10s  ease-in-out 0s infinite normal; }
 
 @keyframes animacion-logos {
@@ -71,20 +71,7 @@
     font-size: 1.5rem;
     text-align: justify; }
   .mainIndex .horarios {
-    text-align: center;
-    animation: animacion-horarios 20s  ease-in-out 0s infinite normal; }
-
-@keyframes animacion-horarios {
-  0% {
-    transform: scale(0.8); }
-  25% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.8); }
-  75% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0.8); } }
+    text-align: center; }
   .mainIndex article h3 {
     font-family: "Times New Roman" Times serif;
     font-size: larger;
@@ -131,6 +118,16 @@
 
 .mainNosotros {
   margin: 2%; }
+  .mainNosotros .tituloDelParrafo {
+    font-family: "Times New Roman" Times serif;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #544d4d; }
+  .mainNosotros h2 {
+    margin-left: 5%; }
   .mainNosotros .imgCristina,
   .mainNosotros .imgIsabela {
     margin: 2%;
@@ -142,6 +139,14 @@
 
 .mainServicios {
   margin: 2%; }
+  .mainServicios .tituloDelParrafo {
+    font-family: "Times New Roman" Times serif;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #544d4d; }
   .mainServicios .servicios {
     background-color: lightpink;
     font-family: 'Roboto', sans-serif;
@@ -159,29 +164,56 @@
         .mainServicios .servicios .navServicios ul li a:hover {
           text-decoration: underline;
           font-size: medium; }
+  .mainServicios article h3 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 2%; }
+  .mainServicios article h4 {
+    text-decoration: underline; }
+  .mainServicios article p {
+    font-family: " Arial, Helvetica, sans-serif";
+    font-size: larger; }
   .mainServicios .irInicioPagina {
     background-color: #e4cbcb;
     display: inline-block;
     font-size: x-large;
     margin-top: 5 rem; }
 
-.mainGaleria .galleryContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 2%;
-  margin-bottom: 5%;
-  grid-gap: 2%; }
-  .mainGaleria .galleryContainer .galleryImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-    .mainGaleria .galleryContainer .galleryImg:hover {
-      width: 125%;
-      height: 125%;
-      transform: scale(1); }
+.mainGaleria {
+  margin: 2%; }
+  .mainGaleria .tituloDelParrafo {
+    font-family: "Times New Roman" Times serif;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #544d4d; }
+  .mainGaleria .galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2%;
+    margin-bottom: 5%;
+    grid-gap: 2%; }
+    .mainGaleria .galleryContainer .galleryImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      .mainGaleria .galleryContainer .galleryImg:hover {
+        width: 125%;
+        height: 125%;
+        transform: scale(1); }
 
 .mainContacto {
   margin: 2%; }
+  .mainContacto .tituloDelParrafo {
+    font-family: "Times New Roman" Times serif;
+    font-size: 2rem;
+    margin-top: 1%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #544d4d; }
   .mainContacto .formularioContacto {
     margin: 2%; }
 

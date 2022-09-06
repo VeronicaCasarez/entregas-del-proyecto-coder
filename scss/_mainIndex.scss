@@ -24,29 +24,7 @@
 
     .horarios{
             text-align: center;
-            animation: animacion-horarios 20s  ease-in-out 0s infinite normal;  
-
-            @keyframes animacion-horarios{
-                0%{
-                    transform:scale(.8) ;
-                   }
-                   25%{
-                    transform:scale(1) ;
-                }
-                50%{
-                    transform:scale(.8) ;
-                   }
-                75%{
-                    transform:scale(1) ;
-                }
-                100%{
-                    transform:scale(.8) ;
-                }
-
-            }  
-
-
-
+  
     }
 
     article h3{
