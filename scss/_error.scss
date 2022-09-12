@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main404{
+	background:url(../imagen/pulp-fiction-john-travolta.gif);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:100vh;
+	font-family: 'Titillium Web', sans-serif;
+	color:#fff;
+    
+
+    .travolta{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        background-color:rgba(0,0,0,0.65);
+        text-align:center;
+        
+    }
+    h1{
+        font-size:17rem;
+        margin-top: 13%;
+        margin-bottom: 0;
+        padding:0;
+       
+    }
+    
+    p{
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 0;
+        font-size:2rem;
+        margin-top: 0;
+        margin-bottom:1%;
+    }
+    
+    a{
+        border-radius:25px;
+        background:none;
+        color:#fff;
+        font-size:18px;
+        padding:10px 20px;
+        margin-bottom: 2%;
+        border:2px solid #fff;
+        text-decoration:none;
+        &:hover{
+            background:#fff;
+            color:#212121;
+        }
+    }
+	
+}
+
+
+

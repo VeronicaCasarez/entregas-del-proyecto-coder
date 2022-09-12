@@ -6,7 +6,10 @@
      @extend .tituloDelParrafo; 
               
     }
-     
+    .datosContacto{
+        @include margen (2%);
+        border-bottom: 1px solid black;
+    }
 
     .formularioContacto{
         @include margen (2%);

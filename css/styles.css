@@ -112,6 +112,8 @@
     transform: scale(1); }
   100% {
     transform: scale(0.8); } }
+  .mainIndex .botonWhatsapp {
+    text-align: center; }
   .mainIndex .ultimoArticulo {
     font-family: "Times New Roman" Times serif;
     color: black;
@@ -142,6 +144,8 @@
     .mainNosotros .imgIsabela:hover,
     .mainNosotros .imgIsabela:hover {
       transform: scale(0.9, 0.9); }
+  .mainNosotros .botonWhatsapp {
+    text-align: center; }
 
 .mainServicios {
   margin: 2%;
@@ -189,10 +193,16 @@
         width: 125%;
         height: 125%;
         transform: scale(1); }
+  .mainGaleria .botonWhatsapp {
+    text-align: center;
+    margin-top: 8%; }
 
 .mainContacto {
   margin: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
+  .mainContacto .datosContacto {
+    margin: 2%;
+    border-bottom: 1px solid black; }
   .mainContacto .formularioContacto {
     margin: 2%; }
 
@@ -207,6 +217,49 @@ footer {
     left: 1%;
     width: 8%;
     padding: 2%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main404 {
+  background: url(../imagen/pulp-fiction-john-travolta.gif);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100vh;
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff; }
+  .main404 .travolta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center; }
+  .main404 h1 {
+    font-size: 17rem;
+    margin-top: 13%;
+    margin-bottom: 0;
+    padding: 0; }
+  .main404 p {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 0;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1%; }
+  .main404 a {
+    border-radius: 25px;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 2%;
+    border: 2px solid #fff;
+    text-decoration: none; }
+    .main404 a:hover {
+      background: #fff;
+      color: #212121; }
 
 /* RESPONSIVE  */
 @media (max-width: 1299.98px) {
