@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .tituloDelParrafo, .mainIndex .tituloDelParrafo, .mainNosotros .tituloDelParrafo, .mainServicios .tituloDelParrafo, .mainGaleria .tituloDelParrafo, .mainContacto .tituloDelParrafo {
   font-family: "Times New Roman" Times serif;
   font-size: 2rem;
@@ -270,11 +275,6 @@ footer {
     .main404 a:hover {
       background: #fff;
       color: #212121; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
 /* RESPONSIVE  */
 @media (max-width: 1299.98px) {
