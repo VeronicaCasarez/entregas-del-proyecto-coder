@@ -10,8 +10,9 @@
      
     .galleryContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto;
+    
     padding: 2%; 
     margin-bottom: 5%;
     grid-gap: 2%;
@@ -35,12 +36,7 @@
         }
     
     }
-    .botonWhatsapp{
-        text-align: center;
-        margin-top: 8%;
-        max-width: 90%;
-        
-    }
+ 
 
 }
 

@@ -121,7 +121,7 @@
     transform: scale(0.8); } }
   .mainIndex .botonWhatsapp {
     text-align: center;
-    max-width: 90%; }
+    max-width: 95%; }
   .mainIndex .ultimoArticulo {
     font-family: "Times New Roman" Times serif;
     color: black;
@@ -155,7 +155,7 @@
       transform: scale(0.9, 0.9); }
   .mainNosotros .botonWhatsapp {
     text-align: center;
-    max-width: 90%; }
+    max-width: 95%; }
 
 .mainServicios {
   margin: 2%;
@@ -190,7 +190,7 @@
   background-image: url(../imagen/fondo-main.jpg); }
   .mainGaleria .galleryContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding: 2%;
     margin-bottom: 5%;
@@ -203,10 +203,6 @@
         width: 105%;
         height: 105%;
         transform: scale(1); }
-  .mainGaleria .botonWhatsapp {
-    text-align: center;
-    margin-top: 8%;
-    max-width: 90%; }
 
 .mainContacto {
   margin: 2%;
