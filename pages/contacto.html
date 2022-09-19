@@ -39,29 +39,29 @@
   
    
   
-    <h1 class="tipografiaTitulo fs-2 text-align-center" >POMPA DE JABON </h1>
-    <h2 class="tipografiaSubtitulo fs-6 text-align-center " >PELUQUERIA CANINA Y FELINA</h2>
+    <h1 class="tipografiaTitulo fs-2" >POMPA DE JABON </h1>
+    <h2 class="tipografiaSubtitulo fs-6" >PELUQUERIA CANINA Y FELINA</h2>
 
     <div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
+             
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav"> 
                 <ul class="navbar-nav">
-                  <li class="nav-item ">
-                    <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./nosotros.html">NOSOTROS</a>
+                    <a class="nav-link " aria-current="page" href="../pages/nosotros.html">NOSOTROS</a>
                   </li> <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./servicios.html">SERVICIOS</a>
+                    <a class="nav-link " aria-current="page" href="../pages/servicios.html">SERVICIOS</a>
                   </li> <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="./galeria.html">GALERIA</a>
-                  </li> <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                    <a class="nav-link " aria-current="page" href="../pages/galeria.html">GALERIA</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
                   </li>
                  
                  
@@ -82,58 +82,97 @@
         
         <h1 class="tituloDelParrafo">CONTACTANOS</h1>
         
-        <div class="datosContacto">
-          <div>  
-            <h3 class="fs-5 pt-3 pb-.5 "><u>HORARIOS</u></h3>
-            <h4 class="fs-6">Lunes a Viernes: 08:00 a 20:00 Hs </h4>
-            <h4 class="fs-6">Sabados: 08:00 a 12:00 Hs </h4>
-          </div>
-          <div> 
-            <h3 class="fs-5 pt-3 pb-.5 "><u>DIRECCION </u></h3>
-            <h4 class="fs-6">Av. Dorrego 3201</h4>
-          </div>
-          <div>  
-            <h3 class="fs-5 pt-3 pb-.5 "><u>CORREO ELECTRONICO</u></h3>
-            <h4 class="fs-5" ><a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank">pompadejabon@gmail.com</a> </h4>
-          </div>  
-        </div>
-        <div> 
-          <h5>FORMULARIO DE CONTACTO</h5>
-          <form  action="" method="post">
-        
-                <div class="formularioContacto">
-                    <label for="Nombre">Ingrese su nombre</label>
-                    <input class=" w-10" type="text" id="Nombre"  placeholder="Nombre">
-                </div>
+      
 
-                <div class="formularioContacto">
-                    <label for="Apellido">Ingrese su apellido</label>
-                    <input class=" w-10 " type="text" id="Apellido"  placeholder="Apellido">
-                </div>
 
-                <div class="formularioContacto">
-                    <label for="Whatsapp">Ingrese su telefono</label>
-                    <input type="number" id="CodigoDeArea"  placeholder="Código de area sin el 0">
-                    <input  class=" w-40"type="number" id="Numero"  placeholder="Numero teléfono sin el 15">
-                   
-                </div>
-               
-                <div class="formularioContacto">
-                    <label for="Correo">Ingrese su email</label>
-                    <input class=" w-10" type="email" id="Correo"  placeholder="Email">
-                </div>
+<section class="mb-4">
+  <div class="row">
 
-                <div class="formularioContacto"> 
-                    <label for="comentario">Ingrese comentario</label>
-                    <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese su comentario"></textarea>
-                </div>    
-       
-                <div class="formularioContacto"> 
-                    <input type="reset" value="Limpiar formulario">
-                    <input type="button" value="Enviar">
-                </div>   
-            
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Tu nombre</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Tu email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Motivo</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Tu mensaje</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
           </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Av. Dorrego 3201 - Capital - Buenos Aires</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 54 9 2346 652566</p>
+              </li>
+
+              
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+
         </div>
      
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2616556752723!2d-58.43046971689262!3d-34.57224531018128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5985a1c6e67%3A0x4549a6eaa5d3951a!2sAv.%20Dorrego%203201-3405%2C%20C1425GAK%20CABA!5e0!3m2!1ses!2sar!4v1661461561424!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="100" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

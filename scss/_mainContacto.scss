@@ -6,20 +6,6 @@
      @extend .tituloDelParrafo; 
               
     }
-    .datosContacto{
-        @include margen (2%);
-        border-bottom: 1px solid black;
-    }
-    h5{
-        @include margen (2%);
-        text-align: center;
-        text-decoration: underline;
-
-    }
-
-    .formularioContacto{
-        @include margen (2%);
-    } 
-    
+ 
     
 }

@@ -1,5 +1,5 @@
 .mainServicios{
-    @include margen(2%);
+    // @include margen(2%);
     background-image: url(../imagen/fondo-main.jpg);
 
     
@@ -48,15 +48,19 @@
 
         h4{
             @extend .underline;
+            text-align: center;
             margin-top: 2%;
         }
         p{
             font-family:map-get($tipografia,"parrafos");
             font-size: larger;
+            text-align: justify;
+            padding: 2%;
         }
     }
 
   .irInicioPagina{
     @extend .irInicioPagina;
+    
   }
 }

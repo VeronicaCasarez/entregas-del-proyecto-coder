@@ -18,7 +18,8 @@
 .irInicioPagina, .mainIndex .irInicioPagina, .mainServicios .irInicioPagina {
   display: inline-block;
   font-size: x-large;
-  margin-top: 5 rem; }
+  margin-top: 5 rem;
+  padding-left: 2%; }
 
 .logo, .headerGrid .logo1, .headerGrid .logo2 {
   padding: 0;
@@ -143,7 +144,8 @@
     margin-left: 5%; }
   .mainNosotros article p {
     font-family: " Arial, Helvetica, sans-serif";
-    font-size: larger; }
+    font-size: larger;
+    text-align: justify; }
   .mainNosotros .imgCristina,
   .mainNosotros .imgIsabela {
     margin: 2%;
@@ -158,7 +160,6 @@
     max-width: 95%; }
 
 .mainServicios {
-  margin: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
   .mainServicios .servicios {
     background-color: lightpink;
@@ -180,17 +181,20 @@
     text-align: center;
     margin: 2%; }
   .mainServicios article h4 {
+    text-align: center;
     margin-top: 2%; }
   .mainServicios article p {
     font-family: " Arial, Helvetica, sans-serif";
-    font-size: larger; }
+    font-size: larger;
+    text-align: justify;
+    padding: 2%; }
 
 .mainGaleria {
   margin: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
   .mainGaleria .galleryContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding: 2%;
     margin-bottom: 5%;
@@ -207,15 +211,6 @@
 .mainContacto {
   margin: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
-  .mainContacto .datosContacto {
-    margin: 2%;
-    border-bottom: 1px solid black; }
-  .mainContacto h5 {
-    margin: 2%;
-    text-align: center;
-    text-decoration: underline; }
-  .mainContacto .formularioContacto {
-    margin: 2%; }
 
 footer {
   z-index: 2;
@@ -284,8 +279,7 @@ footer {
 @media (max-width: 991.98px) {
   .logo2 {
     display: none; }
-  .galleryContainer {
-    display: grid;
+  .mainGaleria .galleryContainer {
     grid-template-columns: 1fr 1fr 1fr; } }
 
 @media (max-width: 782px) {
@@ -295,19 +289,16 @@ footer {
     margin-right: 10%; }
   .logo2 {
     display: none; }
-  .galleryContainer {
-    display: grid;
+  .mainGaleria .galleryContainer {
     grid-template-columns: 1fr 1fr 1fr; }
   .navbar {
     margin-left: 10%; } }
 
 @media (max-width: 767.98px) {
-  .galleryContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; } }
+  .mainGaleria .galleryContainer {
+    grid-template-columns: 1fr  1fr; } }
 
 @media (max-width: 575.98px) {
-  .galleryContainer {
-    display: grid;
+  .mainGaleria .galleryContainer {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 5rem; } }
