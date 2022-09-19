@@ -23,22 +23,26 @@
 
     }
 
+    
     .navbar-nav{
         border-left: 1px solid black;
         margin-top: 0.9%;
         .nav-link.active{
             text-decoration: underline;
+            background-color:$color-hover;
+            border-radius: 10px;
         }
 
         .nav-link{     
            
             &:hover{
-            font-size: large;
-            background-color:$color-hover;
+                background-color:$color-hover;
+                border-radius: 10px;
             }
        
             &:visited{
-            color:rgb(121, 78, 61);
+                color:rgb(121, 78, 61);
+            
             }  
            
             

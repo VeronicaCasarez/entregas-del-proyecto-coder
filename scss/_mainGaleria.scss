@@ -1,3 +1,4 @@
+
 .mainGaleria{ 
     @include margen (2%);
     background-image: url(../imagen/fondo-main.jpg);
@@ -9,7 +10,8 @@
      
     .galleryContainer{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     padding: 2%; 
     margin-bottom: 5%;
     grid-gap: 2%;
@@ -22,9 +24,10 @@
             
         
             &:hover{
-             width: 125%;
-             height: 125%;
-             transform: scale(1); 
+                width: 105%;
+                height: 105%;
+                transform: scale(1); 
+                
            
             }
         
@@ -35,6 +38,7 @@
     .botonWhatsapp{
         text-align: center;
         margin-top: 8%;
+        max-width: 90%;
         
     }
 

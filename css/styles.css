@@ -62,10 +62,12 @@
     border-left: 1px solid black;
     margin-top: 0.9%; }
     .headerGrid .navbar-nav .nav-link.active {
-      text-decoration: underline; }
+      text-decoration: underline;
+      background-color: rgba(231, 200, 238, 0.536);
+      border-radius: 10px; }
     .headerGrid .navbar-nav .nav-link:hover {
-      font-size: large;
-      background-color: rgba(231, 200, 238, 0.536); }
+      background-color: rgba(231, 200, 238, 0.536);
+      border-radius: 10px; }
     .headerGrid .navbar-nav .nav-link:visited {
       color: #794e3d; }
   .headerGrid .logo1 {
@@ -113,7 +115,8 @@
   100% {
     transform: scale(0.8); } }
   .mainIndex .botonWhatsapp {
-    text-align: center; }
+    text-align: center;
+    max-width: 90%; }
   .mainIndex .ultimoArticulo {
     font-family: "Times New Roman" Times serif;
     color: black;
@@ -139,13 +142,15 @@
   .mainNosotros .imgCristina,
   .mainNosotros .imgIsabela {
     margin: 2%;
-    border-style: double; }
+    border-style: double;
+    max-width: 80%; }
     .mainNosotros .imgCristina:hover, .mainNosotros .imgCristina:hover,
     .mainNosotros .imgIsabela:hover,
     .mainNosotros .imgIsabela:hover {
       transform: scale(0.9, 0.9); }
   .mainNosotros .botonWhatsapp {
-    text-align: center; }
+    text-align: center;
+    max-width: 90%; }
 
 .mainServicios {
   margin: 2%;
@@ -165,8 +170,7 @@
         margin-left: 2rem;
         text-decoration: none; }
         .mainServicios .servicios .navServicios ul li a:hover {
-          text-decoration: underline;
-          font-size: medium; }
+          text-decoration: underline; }
   .mainServicios article h3 {
     text-align: center;
     margin: 2%; }
@@ -181,7 +185,8 @@
   background-image: url(../imagen/fondo-main.jpg); }
   .mainGaleria .galleryContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     padding: 2%;
     margin-bottom: 5%;
     grid-gap: 2%; }
@@ -190,12 +195,13 @@
       height: 100%;
       object-fit: cover; }
       .mainGaleria .galleryContainer .galleryImg:hover {
-        width: 125%;
-        height: 125%;
+        width: 105%;
+        height: 105%;
         transform: scale(1); }
   .mainGaleria .botonWhatsapp {
     text-align: center;
-    margin-top: 8%; }
+    margin-top: 8%;
+    max-width: 90%; }
 
 .mainContacto {
   margin: 2%;
@@ -203,6 +209,10 @@
   .mainContacto .datosContacto {
     margin: 2%;
     border-bottom: 1px solid black; }
+  .mainContacto h5 {
+    margin: 2%;
+    text-align: center;
+    text-decoration: underline; }
   .mainContacto .formularioContacto {
     margin: 2%; }
 
@@ -261,6 +271,11 @@ footer {
       background: #fff;
       color: #212121; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /* RESPONSIVE  */
 @media (max-width: 1299.98px) {
   .logo2 {
@@ -271,14 +286,32 @@ footer {
     display: none; } }
 
 @media (max-width: 991.98px) {
+  .logo2 {
+    display: none; }
   .galleryContainer {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr; } }
+
+@media (max-width: 782px) {
+  .tipografiaTitulo {
+    margin-right: 10%; }
+  .tipografiaSubtitulo {
+    margin-right: 10%; }
+  .logo2 {
+    display: none; }
+  .galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+  .navbar {
+    margin-left: 10%; } }
 
 @media (max-width: 767.98px) {
   .galleryContainer {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr; } }
 
 @media (max-width: 575.98px) {
   .galleryContainer {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 5rem; } }

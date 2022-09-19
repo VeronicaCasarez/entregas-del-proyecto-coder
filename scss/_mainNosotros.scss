@@ -22,6 +22,7 @@
     .imgIsabela{    
         @include margen(2%);
         border-style: double;
+        max-width: 80%;
         
 
             &:hover,
@@ -33,6 +34,7 @@
         }
     .botonWhatsapp{
         text-align: center;
+        max-width: 90%;
     }
 }
 
