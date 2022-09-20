@@ -1,5 +1,5 @@
 .mainNosotros{
-    @include margen (2%);
+    @include padding (2%);
     background-image: url(../imagen/fondo-main.jpg);
 
     .tituloDelParrafo{
@@ -18,24 +18,23 @@
         }
     }
     
-
     .imgCristina,
-    .imgIsabela{    
-        @include margen(2%);
+    .imgIsabela,
+    .imgNuestroEquipo{    
+        @include margin(2%);
         border-style: double;
         max-width: 80%;
         
 
-            &:hover,
-            &:hover{
+                &:hover{
                 transform: scale(.9,.9);
    
             }
-    
         }
+
     .botonWhatsapp{
         text-align: center;
-        max-width: 95%;
+       
     }
 }
 

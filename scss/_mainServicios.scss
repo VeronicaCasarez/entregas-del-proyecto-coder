@@ -1,5 +1,5 @@
 .mainServicios{
-    // @include margen(2%);
+    @include padding(2%);
     background-image: url(../imagen/fondo-main.jpg);
 
     
@@ -30,11 +30,9 @@
     
                             &:hover{
                                 text-decoration: underline;
-                                               
-                                 }
-                     } 
-             }
-       
+                           }
+                    } 
+            }
         }
     }
     
@@ -43,7 +41,7 @@
         h3{
             @extend .underline;
             text-align: center;
-            @include margen(2%);
+            @include padding(2%);
         }
 
         h4{

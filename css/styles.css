@@ -121,15 +121,15 @@
   100% {
     transform: scale(0.8); } }
   .mainIndex .botonWhatsapp {
-    text-align: center;
-    max-width: 95%; }
+    text-align: center; }
   .mainIndex .ultimoArticulo {
     font-family: "Times New Roman" Times serif;
     color: black;
     font-size: 1.5rem;
     text-align: justify; }
     .mainIndex .ultimoArticulo .imgNuestroEquipo {
-      margin-bottom: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       margin-right: 3rem;
       float: right;
       margin-left: 3rem; }
@@ -138,7 +138,7 @@
       text-align: center; }
 
 .mainNosotros {
-  margin: 2%;
+  padding: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
   .mainNosotros h2 {
     margin-left: 5%; }
@@ -147,19 +147,20 @@
     font-size: larger;
     text-align: justify; }
   .mainNosotros .imgCristina,
-  .mainNosotros .imgIsabela {
+  .mainNosotros .imgIsabela,
+  .mainNosotros .imgNuestroEquipo {
     margin: 2%;
     border-style: double;
     max-width: 80%; }
-    .mainNosotros .imgCristina:hover, .mainNosotros .imgCristina:hover,
+    .mainNosotros .imgCristina:hover,
     .mainNosotros .imgIsabela:hover,
-    .mainNosotros .imgIsabela:hover {
+    .mainNosotros .imgNuestroEquipo:hover {
       transform: scale(0.9, 0.9); }
   .mainNosotros .botonWhatsapp {
-    text-align: center;
-    max-width: 95%; }
+    text-align: center; }
 
 .mainServicios {
+  padding: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
   .mainServicios .servicios {
     background-color: lightpink;
@@ -179,7 +180,7 @@
           text-decoration: underline; }
   .mainServicios article h3 {
     text-align: center;
-    margin: 2%; }
+    padding: 2%; }
   .mainServicios article h4 {
     text-align: center;
     margin-top: 2%; }
@@ -190,7 +191,7 @@
     padding: 2%; }
 
 .mainGaleria {
-  margin: 2%;
+  padding: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
   .mainGaleria .galleryContainer {
     display: grid;
@@ -198,18 +199,20 @@
     grid-template-rows: auto;
     padding: 2%;
     margin-bottom: 5%;
-    grid-gap: 2%; }
+    grid-gap: 4%; }
+    .mainGaleria .galleryContainer .galeriaItem {
+      margin: auto;
+      padding: auto; }
+      .mainGaleria .galleryContainer .galeriaItem:hover {
+        width: 105%;
+        height: 105%; }
     .mainGaleria .galleryContainer .galleryImg {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-      .mainGaleria .galleryContainer .galleryImg:hover {
-        width: 105%;
-        height: 105%;
-        transform: scale(1); }
 
 .mainContacto {
-  margin: 2%;
+  padding: 2%;
   background-image: url(../imagen/fondo-main.jpg); }
 
 footer {
@@ -280,7 +283,8 @@ footer {
   .logo2 {
     display: none; }
   .mainGaleria .galleryContainer {
-    grid-template-columns: 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 15%; } }
 
 @media (max-width: 782px) {
   .tipografiaTitulo {
@@ -296,9 +300,13 @@ footer {
 
 @media (max-width: 767.98px) {
   .mainGaleria .galleryContainer {
-    grid-template-columns: 1fr  1fr; } }
+    grid-template-columns: 1fr  1fr;
+    margin-bottom: 40%; } }
 
 @media (max-width: 575.98px) {
+  .tipografiaTitulo {
+    margin-left: 10%; }
   .mainGaleria .galleryContainer {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem;
+    margin-bottom: 40%; } }

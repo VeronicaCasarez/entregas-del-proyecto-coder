@@ -18,12 +18,9 @@
 
 
 @media (max-width: 1299.98px) {
- 
-    .logo2{
+     .logo2{
         display: none;
     } 
-   
-   
 }
 
 @media (max-width: 1199.98px) {
@@ -42,12 +39,11 @@
     .mainGaleria .galleryContainer{
  
        grid-template-columns: 1fr 1fr 1fr;
+       margin-bottom: 15%;
      
-   }
- 
-
+   }  
 }
-
+ 
  @media (max-width: 782px) {
     .tipografiaTitulo{
           margin-right: 10%;
@@ -56,43 +52,38 @@
            margin-right: 10%;
       }
       .logo2{
-        display: none;
+            display: none;
     } 
   
     .mainGaleria .galleryContainer{
-       
         grid-template-columns: 1fr 1fr 1fr;
        
     }
     .navbar{
         margin-left: 10%;
     }
+   
   }
 
 @media (max-width: 767.98px) {
     .mainGaleria .galleryContainer{
-    
         grid-template-columns: 1fr  1fr;
-        
-    
-    
-    }
-  
-    
-    
+        margin-bottom: 40%;
 
+    }
 }
 
 
 @media (max-width: 575.98px) {
-
+    .tipografiaTitulo{
+        margin-left:10%;
+    }
+    
     .mainGaleria .galleryContainer{
-   
         grid-template-columns: 1fr 1fr;
         margin-bottom: 5rem; 
+        margin-bottom: 40%;
    }
-
- 
 }
 
 
