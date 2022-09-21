@@ -18,7 +18,7 @@
 .irInicioPagina, .mainIndex .irInicioPagina, .mainServicios .irInicioPagina {
   display: inline-block;
   font-size: x-large;
-  margin-top: 5 rem;
+  margin-top: 2rem;
   padding-left: 2%; }
 
 .logo, .headerGrid .logo1, .headerGrid .logo2 {
@@ -38,6 +38,13 @@
     transform: rotateY(50deg); }
   100% {
     transform: rotateY(20deg); } }
+
+.footerTitulo, footer .footerTitulo,
+.footerSubtitulo,
+footer .footerSubtitulo {
+  padding-top: 1.5px;
+  padding-bottom: 1px;
+  text-decoration: underline; }
 
 .bodyGrid {
   width: 100%;
@@ -219,13 +226,19 @@ footer {
   z-index: 2;
   text-align: center;
   background-image: url(../imagen/imagen-footer.jpg);
-  grid-area: footerGrid; }
+  grid-area: footerGrid;
+  height: 100%; }
+  footer .footerTitulo {
+    font-size: 1.5em; }
+  footer .footerSubtitulo {
+    font-size: 1em;
+    text-decoration: none; }
   footer .btnWhatsapp,
   footer .btnFacebook,
   footer .btnInstagram {
     left: 1%;
-    width: 8%;
-    padding: 2%; }
+    width: 6%;
+    padding: 1%; }
 
 * {
   margin: 0;

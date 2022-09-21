@@ -3,14 +3,27 @@ footer{
     text-align:center;   
     background-image: url(../imagen/imagen-footer.jpg);
     grid-area: footerGrid; 
+    height: 100%;
 
+    .footerTitulo{
+        @extend .footerTitulo;
+        font-size: 1.5em;
+      
+
+    }
+    .footerSubtitulo{
+        @extend .footerSubtitulo;
+        font-size: 1em;
+        text-decoration: none;
+
+    }
 
     .btnWhatsapp,
     .btnFacebook,
     .btnInstagram{
             left: 1%; 
-            width: 8%; 
-            padding: 2%;  
+            width: 6%; 
+            padding: 1%;  
 
     } 
 

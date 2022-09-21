@@ -16,7 +16,7 @@
 .irInicioPagina {
     display: inline-block; 
     font-size: x-large;
-    margin-top: 5 rem;
+    margin-top:2rem;
     padding-left: 2%;
 
 }
@@ -45,4 +45,11 @@
                     }
 
         }
+    }
+
+    .footerTitulo,
+    .footerSubtitulo{
+        padding-top: 1.5px;
+        padding-bottom:1px;
+        text-decoration: underline;
     }
