@@ -210,13 +210,11 @@ footer .footerSubtitulo {
     .mainGaleria .galleryContainer .galeriaItem {
       margin: auto;
       padding: auto; }
-      .mainGaleria .galleryContainer .galeriaItem:hover {
-        width: 105%;
-        height: 105%; }
     .mainGaleria .galleryContainer .galleryImg {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      border: double; }
 
 .mainContacto {
   padding: 2%;
@@ -312,6 +310,8 @@ footer {
     margin-left: 10%; } }
 
 @media (max-width: 767.98px) {
+  .tipografiaSubtitulo {
+    margin-right: 10%; }
   .mainGaleria .galleryContainer {
     grid-template-columns: 1fr  1fr;
     margin-bottom: 40%; } }
@@ -320,6 +320,5 @@ footer {
   .tipografiaTitulo {
     margin-left: 10%; }
   .mainGaleria .galleryContainer {
-    grid-template-columns: 1fr 1fr;
     margin-bottom: 5rem;
     margin-bottom: 40%; } }

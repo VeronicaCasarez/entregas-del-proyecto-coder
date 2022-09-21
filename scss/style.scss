@@ -66,6 +66,10 @@
   }
 
 @media (max-width: 767.98px) {
+    
+    .tipografiaSubtitulo{
+        margin-right: 10%;
+   }
     .mainGaleria .galleryContainer{
         grid-template-columns: 1fr  1fr;
         margin-bottom: 40%;
@@ -78,9 +82,10 @@
     .tipografiaTitulo{
         margin-left:10%;
     }
+  
     
     .mainGaleria .galleryContainer{
-        grid-template-columns: 1fr 1fr;
+        
         margin-bottom: 5rem; 
         margin-bottom: 40%;
    }
