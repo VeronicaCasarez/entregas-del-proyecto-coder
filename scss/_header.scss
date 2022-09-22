@@ -6,14 +6,12 @@
     background-color: white;
     border-bottom: 1px solid gainsboro;
 
-
-
     .tipografiaTitulo{
         font-family: map-get($tipografia,"titulo-header");
         color: black; 
         margin-top: 1%;
         padding-right: 0%;
-      }
+    }
 
     .tipografiaSubtitulo{
         font-family: map-get($tipografia,"subtitulo-header");
