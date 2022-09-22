@@ -238,11 +238,6 @@ footer {
     width: 6%;
     padding: 1%; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 .main404 {
   background: url(../imagen/pulp-fiction-john-travolta.gif);
   background-repeat: no-repeat;
@@ -322,3 +317,7 @@ footer {
   .mainGaleria .galleryContainer {
     margin-bottom: 5rem;
     margin-bottom: 40%; } }
+
+@media (max-width: 444px) {
+  .tipografiaSubtitulo {
+    margin-left: 30% !important; } }
